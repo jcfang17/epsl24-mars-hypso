@@ -2,12 +2,20 @@
 
 This repository contains data and code for analyzing hypsometric curves of Martian and terrestrial surfaces. The analysis includes tools for calculating hypsometry parameters and performing statistical comparisons between different surfaces.
 
-## Usage
+## Installation
 
 ```bash
-git clone https://github.com/yourusername/epsl24-mars-hypso.git
+git clone https://github.com/jcfang17/epsl24-mars-hypso.git
 cd epsl24-mars-hypso
 ```
+
+### Requirements
+- numpy
+- pandas
+- matplotlib
+- scipy
+- rasterio
+- jupyter
 
 ## Project Structure
 
@@ -15,24 +23,38 @@ cd epsl24-mars-hypso
 ├── data/
 │   └── data_all_surfaces.csv    # Contains calculated hypsometry parameters for all surfaces
 ├── examples/
-│   ├── demo.ipynb              # Jupyter notebook demonstrating usage
+│   ├── hypsometry-demo.ipynb    # Demo of hypsometric curve calculation and metrics
+│   ├── box-plot.ipynb          # Recreation of Figure 4 from the paper
+│   ├── t-test.ipynb           # Recreation of Table 2 from the paper
 │   └── HydroBasin_*.tif       # Example DEM files for demonstration
 └── util/
     ├── __init__.py
     └── hypso.py               # Core functions for hypsometric analysis
 ```
 
-## Usage
+## Core Functionality
 
-The main functionality is provided through the `util.hypso` module, which includes:
+The main functionality is provided through the `util.hypso` module. Which is used to calculate all the hypsometric data used in the paper. Key functions include:
 
 - `get_hypso_vector`: Calculate hypsometry vector from DEM array
 - `plot_hypso_vector`: Visualize hypsometric curves
 - `get_hypso_attributes_from_vector`: Extract hypsometric attributes
 
-See the `examples/demo.ipynb` notebook for detailed usage examples.
+## Examples
+
+The repository includes several example notebooks demonstrating different aspects of the analysis:
+
+1. `hypsometry-demo.ipynb`: Demonstrates how to use the core functions to:
+   - Load and process DEM data
+   - Calculate hypsometric curves
+   - Display curves and compute metrics
+   - Two example DEMs provided in the examples folder
+
+2. `box-plot.ipynb`: Recreation of Figure 4 from the paper using the pre-calculated data
+
+3. `t-test.ipynb`: Statistical analysis notebook that recreates Table 2 from the paper
 
 ## Data Description
 
-- `data/data_all_surfaces.csv`: Contains all calculated hypsometry parameters used for plots and statistical tests in the paper.
+- `data/data_all_surfaces.csv`: Contains all pre-calculated hypsometry parameters used for plots and statistical tests in the paper. This dataset is used directly by the box-plot and t-test example notebooks.
 - Example DEM files in `examples/` directory demonstrate the analysis workflow with real topographic data. Data from HydroBasins with their HYBAS_ID in the filename. The DEMs are void filled and clipped to the extent of the HydroBasin. 
