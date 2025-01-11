@@ -1,8 +1,7 @@
-# epsl24-mars-hypso
+# Data and Codes for the paper: Global Comparative Basin Hypsometric Analysis of Earth and Mars: Implications for Early Mars Climate
 
-This repository contains data and code for analyzing hypsometric curves of Martian and terrestrial surfaces. The analysis includes tools for calculating hypsometry parameters and performing statistical comparisons between different surfaces.
 
-## Installation
+## Usage
 
 ```bash
 git clone https://github.com/jcfang17/epsl24-mars-hypso.git
@@ -50,9 +49,9 @@ The repository includes several example notebooks demonstrating different aspect
    - Display curves and compute metrics
    - Two example DEMs provided in the examples folder
 
-2. `box-plot.ipynb`: Recreation of Figure 4 from the paper using the pre-calculated data
+2. `box-plot.ipynb`: Recreation of Figure 4 from the paper
 
-3. `t-test.ipynb`: Statistical analysis notebook that recreates Table 2 from the paper
+3. `t-test.ipynb`: Recreates Table 2 from the paper
 
 ## Data Description
 
