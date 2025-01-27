@@ -1,5 +1,6 @@
 # Data and Codes for the paper: Global Comparative Basin Hypsometric Analysis of Earth and Mars: Implications for Early Mars Climate
 
+[Paper](https://doi.org/10.1016/j.epsl.2025.119226)
 
 ## Usage
 
