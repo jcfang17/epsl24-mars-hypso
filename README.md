@@ -1,6 +1,7 @@
-# Data and Codes for the paper: Global Comparative Basin Hypsometric Analysis of Earth and Mars: Implications for Early Mars Climate
+# Global Comparative Basin Hypsometric Analysis of Earth and Mars: Implications for Early Mars Climate
 
 [Paper](https://doi.org/10.1016/j.epsl.2025.119226)
+
 
 ## Usage
 
@@ -58,3 +59,6 @@ The repository includes several example notebooks demonstrating different aspect
 
 - `data/data_all_surfaces.csv`: Contains all pre-calculated hypsometry parameters used for plots and statistical tests in the paper. This dataset is used directly by the box-plot and t-test example notebooks.
 - Example DEM files in `examples/` directory demonstrate the analysis workflow with real topographic data. Data from HydroBasins with their HYBAS_ID in the filename. The DEMs are void filled and clipped to the extent of the HydroBasin. 
+
+### Contact
+If you have any questions about the paper or encounter any issues, feel free to contact me: jfang2 [at] niu [dot] edu.
